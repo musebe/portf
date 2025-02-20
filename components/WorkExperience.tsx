@@ -17,13 +17,13 @@ const workExperienceData: WorkExperienceItem[] = [
     companyName: 'Cloudinary',
     jobTitle: 'Contractor',
     description: [
-      'Worked across DevRel and Marketing as a technical author, creating developer-focused content and educational resources.',
-      'Focused on marketing automation, leveraging AI and custom workflows to streamline developer engagement and content distribution.',
-      'Wrote and optimized technical articles, guides, and API documentation, driving higher engagement and organic traffic growth.',
-      'Built AI-driven content pipelines for social media, automating post generation and scheduling for LinkedIn, X, and YouTube.',
+      'Worked across DevRel and Marketing as a technical author and SDK Engineer, building developer-focused solutions and Next.js-based workflows for marketing automation.',
+      'Led developer relations initiatives by creating sample applications and code demos showcasing Cloudinary’s advanced media transformations in Node.js and Next.js.',
+      'Architected AI-driven content pipelines for social media, automating post generation, image transformations, and scheduling on LinkedIn, X, and YouTube.',
       'Developed custom Puppeteer-based scraping tools to extract and process blog content for automated social media posting.',
-      'Built dashboards to analyze developer engagement trends, improving content strategies and outreach.',
-      'Automated marketing workflows with GitHub Actions, reducing manual effort by 70% in content scheduling and publishing.',
+      'Built dashboards (React + Next.js) to analyze developer engagement trends, implementing data-driven improvements to content strategy and outreach.',
+      'Implemented advanced marketing automation workflows with GitHub Actions, Next.js serverless functions, and Cloudinary’s APIs, reducing manual effort by 70% in content scheduling and publishing.',
+      'Authored and optimized technical articles, guides, and in-depth API documentation, boosting developer engagement and organic traffic.',
     ],
   },
   {
@@ -108,8 +108,8 @@ const WorkExperience: React.FC = () => {
               </span>
             </h3>
             <ul className='list-disc list-outside ml-6 text-base font-normal text-gray-700 dark:text-gray-400 space-y-1'>
-              {item.description.map((desc, index) => (
-                <li key={index} className='leading-relaxed'>
+              {item.description.map((desc, i) => (
+                <li key={i} className='leading-relaxed'>
                   {desc}
                 </li>
               ))}

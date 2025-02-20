@@ -8,7 +8,7 @@ function ContactMe() {
       <p className='text-sm text-gray-500 dark:text-gray-300'>
         Want to chat? Just shoot me a dm with a{' '}
         <Link
-          href='https://x.com/yatharth170699'
+          href='https://x.com/_musebe'
           target='_blank'
           className='text-blue-500'
         >
